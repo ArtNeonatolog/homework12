@@ -6,7 +6,7 @@ public class Author {
         this.authorName = authorName;
         this.authorLastname = authorLastname;
     }
-    public String getAuthorName () {
+    public String getAuthorName (String artem) {
         return this.authorName;
     }
     public String getAuthorLastname () {
