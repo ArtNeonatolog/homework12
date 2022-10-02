@@ -1,23 +1,26 @@
 public class Book {
-   String name;
-   private int year;
-    private final Author author;
+   private String nameOfTheBook;
+   int year;
+   private final Author author;
 
-    public Book (String name, int year, Author author) {
-        this.name = name;
+    public Book (String nameOfTheBook, int year, Author author) {
+        this.nameOfTheBook = nameOfTheBook;
         this.year = year;
         this.author = author;
     }
-    public String getName() {
-        return name;
+    public String getNameOfTheBook() {
+        return this.nameOfTheBook;
     }
     public int getYear() {
-        return year;
+        return this.year;
     }
     public Author getAuthor() {
         return this.author;
     }
     public void setYear(int year) {
-        this.year = year;
+    this.year = year;
+    }
+    public String bookInfo () {
+        return "Книга " + this.nameOfTheBook + "; Автор: " + this.author.getFullName() + "; Год издания - " + this.year + ".";
     }
 }
